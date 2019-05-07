@@ -1,6 +1,6 @@
 
 import unittest
-from Q2 import compare_string
+from olugbenga_akinduko_Q2 import compare_string
 
 
 class TestsForStrings(unittest.TestCase):

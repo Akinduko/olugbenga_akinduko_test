@@ -4,7 +4,7 @@ This project is a Naive implementation of Geo Distributed least recently used ca
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. The cache program is available at lrucache.py, with methods exposed for ease of integration. To demo the integration a flask app was implemented in main.py to test the cache.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. The cache program is available at olugbenga_akinduko_Q3.py, with methods exposed for ease of integration. To demo the integration a flask app was implemented in main.py to test the cache.
 
 
 ## Features
@@ -28,7 +28,7 @@ timeinterval
 
 ```
 
-# place lrucache.py in your project
+# place olugbenga_akinduko_Q3.py in your project
 
 # install dependencies
 
@@ -39,7 +39,7 @@ pip3 install -r requirements.txt
 # Import the library into your project
 
 ```
-from lrucache import lru_cache
+from olugbenga_akinduko_Q3 import lru_cache
 ```
 
 # initialize the cache
