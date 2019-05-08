@@ -2,7 +2,7 @@ from olugbenga_akinduko_Q3 import lru_cache
 from flask import Flask
 from flask_restful import Api, Resource, reqparse
 
-cache=lru_cache()
+cache=lru_cache(['zone1','zone2'],2,3600*1000,True)
 users = [
     {
         "name": "Nicholas",

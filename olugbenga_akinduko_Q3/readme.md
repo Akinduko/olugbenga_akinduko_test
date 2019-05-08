@@ -45,30 +45,50 @@ from olugbenga_akinduko_Q3 import lru_cache
 # initialize the cache
 
 ```
-cache=lru_cache(max_size,ttl,expire)
+cache=lru_cache(geozones,max_size,ttl,expire)
 
 where:
-max_size: Type: integer , comment: maximum allowed queue size
-ttl: Type: integer , comment: time in in milliseconds
+max_size: Type: integer , comment: maximum allowed queue size,required
+ttl: Type: integer , comment: time in in milliseconds,required
 expire: Type: Boolean, comment: determines expiry
+geozones: Type List, comment: specifiy the allowed regions ,required
 ```
 
-# retrieve the cache
+# retrieve the entire cache
 
 ```
 cache.all() 
 ```
+
+# check the cache by key and zone
+
+```
+cache.view(key,zone) 
+```
+
+```
+where:
+key: Type: Any , comment: cache key ,required
+zone: Type: string , comment: Geolocation ,required
+```
+
+
 
 # update the cache
 
 ```
 cache.update(key,value) 
 ```
+```
+where:
+key: Type: Any , comment: cache key ,required
+value: Type: Any , comment: Result from resource,required
+```
 
-# invalidate the cache
+# invalidate the cache to remove expired records
 
 ```
-cache.expire(key,value) 
+cache.expire() 
 ```
 
 ```
@@ -101,7 +121,3 @@ http://127.0.0.1:5000/cache/Nicholas
 http://127.0.0.1:5000/cache/Jass
 ```
 
-
-### Missing functionalities
-
-- Missing functionalities : Geo distributed methods and functions 
